@@ -319,17 +319,17 @@ def on_mouse_down(pos):
 def draw():
     screen.clear()
     if game_state == "menu":
-        screen.fill((30, 30, 60))
-        screen.draw.text("ZIDO O ALIEN", center= (WIDTH//2, 80), fontsize=48, color="white")
+        screen.fill((90, 210, 140))
+        screen.draw.text("ZIDO O ALIEN", center= (WIDTH//2, 80), fontsize=48, color=(52,101,71))
 
-        screen.draw.filled_rect(btn_start, (70, 160, 70))
+        screen.draw.filled_rect(btn_start, (52,101,71))
         screen.draw.text("JOGAR", center=btn_start.center, fontsize=28, color="white")
 
         screen.draw.filled_rect(btn_sound, (70, 130, 130))
         label = "SOM"
         screen.draw.text(label, center=btn_sound.center, fontsize=28, color="white")
         if not music_on:
-            screen.draw.line((WIDTH//2 - 60, 210), (WIDTH//2 + 60, 250), (255,255,255), 2)
+            screen.draw.line((WIDTH//2 - 60, 210), (WIDTH//2 + 60, 250), (255,255,255))
 
         screen.draw.filled_rect(btn_quit, (160, 60, 60))
         screen.draw.text("SAIR", center=btn_quit.center, fontsize=28, color="white")
